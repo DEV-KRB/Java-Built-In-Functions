@@ -32,6 +32,7 @@ public class ArrayUsingBuiltInFunctions {
 		
 		//using character array
 		char arrStr[] = {'k', 'a', 'v', 'y', 'a'};
+		char p = 'v';
 		
 		//printing characters in array
 		for(int i = 0; i<arrStr.length; i++) {
@@ -42,11 +43,21 @@ public class ArrayUsingBuiltInFunctions {
 		System.out.println();
 		
 		//sorting the characters in array
-		Arrays.sort(arrStr, 2, 3);
+		Arrays.sort(arrStr);
 		
 		for(int i=0;i<arrStr.length; i++) {
 			
 			System.out.print(arrStr[i] + " ");
+		}
+		
+		//binary search for a character in array
+		int term = Arrays.binarySearch(arrStr, p);
+		
+		if(term>=0) {
+			System.out.println("Character found at index: " + term);
+		}
+		else {
+			System.out.println("Not found");
 		}
 	}
 
