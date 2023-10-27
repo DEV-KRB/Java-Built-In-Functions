@@ -65,6 +65,14 @@ public class ArrayUsingBuiltInFunctions {
 		int copyA[] = Arrays.copyOf(arr, newL);
 		
 		System.out.println("Copied array is: " + Arrays.toString(copyA));
+		
+		int valueToFill = 10;
+		
+		//If want to fill same values in array
+		//toString() used to represent array as a string
+		Arrays.fill(copyA, valueToFill);
+		
+		System.out.println("filled values are: " + Arrays.toString(copyA));
 	}
 	
 }
