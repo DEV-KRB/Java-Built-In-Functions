@@ -59,6 +59,12 @@ public class ArrayUsingBuiltInFunctions {
 		else {
 			System.out.println("Not found");
 		}
+		
+		//coping array to new length
+		int newL = 9;
+		int copyA[] = Arrays.copyOf(arr, newL);
+		
+		System.out.println("Copied array is: " + Arrays.toString(copyA));
 	}
-
+	
 }
